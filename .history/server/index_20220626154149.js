@@ -7,11 +7,11 @@ app.use(cors());
 
 const server = http.createServer(app);
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT
 
 const io = new Server(server, {
     cors: {
-        origin: 'https://mellifluous-chaja-8bc705.netlify.app/',
+        origin: 'http://localhost:3000',
         methods: ['GET', 'POST'],
     },
 });
