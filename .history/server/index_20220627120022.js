@@ -33,6 +33,8 @@ io.on('connection', (socket) => {
     });
 });
 
-server.listen(process.env.PORT || 3001, () => {
+
+
+server.listen( 3001, () => {
     console.log('SERVER RUNNING');
 });
